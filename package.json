@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage" : "http://S78901.github.io/my-app",
+  "homepage" : "http://s78901.github.io/my-app",
   "workspaces": [
     "packages/*"
   ],
