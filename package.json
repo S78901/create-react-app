@@ -1,9 +1,12 @@
 {
   "private": true,
+  "homepage" : "http://S78901.github.io/my-app",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "build": "cd packages/react-scripts && node bin/react-scripts.js build",
     "changelog": "lerna-changelog",
     "create-react-app": "node tasks/cra.js",
