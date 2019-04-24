@@ -4,14 +4,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "cd packages/react-scripts && node bin/react-scripts.js build",
+    "git-info": "git log -1 --oneline > src/static/gitInfo.txt",
+    "build": "cd packages/react-scripts && node bin/react-scripts.js build yarn add git-info",
     "changelog": "lerna-changelog",
     "create-react-app": "node tasks/cra.js",
     "e2e": "tasks/e2e-simple.sh",
     "e2e:docker": "tasks/local-test.sh",
     "postinstall": "cd packages/react-error-overlay/ && yarn build:prod",
     "publish": "tasks/publish.sh",
-    "start": "cd packages/react-scripts && node bin/react-scripts.js start",
+    "start": "cd packages/react-scripts && node bin/react-scripts.js start yarn add git-info",
     "screencast": "node ./tasks/screencast.js",
     "screencast:error": "svg-term --cast jyu19xGl88FQ3poMY8Hbmfw8y --out screencast-error.svg --window --at 12000 --no-cursor",
     "test": "cd packages/react-scripts && node bin/react-scripts.js test",
